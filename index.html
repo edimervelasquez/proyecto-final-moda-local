@@ -1,53 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="Moda-local.css">
-    <meta charset="UTF-8">
-    <title>Ingreso de Usuarios</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Login LocalFashion</title>
+<link rel="stylesheet" href="Moda-local.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
 
-    <div class="contenedor-inicio">
-        <h2>Ingreso de Usuarios</h2>
+<div class="contenedor">
 
-        <div class="tarjeta">
+<div class="login-box">
 
-            <div class="seccion-logo">
-                <img src="logo-moda-local.png" alt="Moda Local" width="200">
-                <img src="logo2-moda-local.png" alt="Compradora con bolsas" class="imagen-muchacha">
-                <p>Tu tienda, tu estilo</p>
-            </div>
+<!-- MENU -->
+<div class="menu" onclick="toggleMenu()">☰</div>
 
-            <div class="seccion-formulario">
-                <form action="#" metod="post">
-                    
-                    <div>
-                        <input type="email" name="correo" placeholder="Email" required>
-                    </div>
+<!-- SUBMENU -->
+<div id="submenu" class="submenu">
+<a href="#">Ingreso Administradores</a>
+<a href="#">Ingreso Tiendas</a>
+<a href="#">Ayuda / PQR</a>
+</div>
 
-                    <div>
-                        <input type="password" name="contrasena" placeholder="Contraseña" required>
-                    </div>
+<!-- LOGO -->
+<img src="LOGO.png" class="logo">
 
-                    <div>
-                        <a href="#">¿Olvidaste tu contraseña?</a>
-                    </div>
+<p class="slogan">Compra a tu estilo</p>
 
-                    <div>
-                        <button type="submit">Ingresar</button>
-                    </div>
+<img src="IMAGEN LOGIN.png" class="familia">
 
-                </form>
-            </div>
+<form>
 
-            <div class="seccion-registro">
-                <p>¿No tienes cuenta?</p>
-                <a href="#">Regístrate</a>
-            </div>
+<input type="email" placeholder="Correo">
 
-        </div>
-    </div>
+<input type="password" placeholder="Contraseña">
+
+<a href="#" class="olvide">¿Olvidaste tu contraseña?</a>
+
+<button type="submit">INGRESAR</button>
+
+</form>
+
+<p class="registro-texto">¿No tienes cuenta?</p>
+<a href="#" class="registro">REGÍSTRATE</a>
+
+</div>
+
+</div>
+
+<script>
+
+function toggleMenu(){
+document.getElementById("submenu").classList.toggle("mostrar");
+}
+
+</script>
 
 </body>
 </html>
